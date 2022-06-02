@@ -846,11 +846,11 @@ footer {
       width: 100%; }
       main section.fifth .form .titulo {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         text-align: start;
         padding-bottom: 50px; }
         main section.fifth .form .titulo span {
-          width: 20vw;
+          width: 15vw;
           height: 3px;
           background-color: #fff;
           margin-top: 1vh;
@@ -858,25 +858,30 @@ footer {
         main section.fifth .form .titulo h3 {
           font-weight: 600;
           font-size: 28px;
-          color: #fff; }
-      main section.fifth .form .grupo1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 5px; }
+          color: #fff;
+          margin: 0 30px 0 30px; }
+    main section.fifth .grupo1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 5px;
+      justify-content: center;
+      justify-items: center; }
     main section.fifth input {
       border: none;
       box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
       border-radius: 5px;
-      max-width: 70%;
+      width: 162px;
       height: 30px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      gap: 5px;
+      justify-content: end; }
     main section.fifth textarea {
       box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
       border-radius: 5px;
       border: none;
-      width: 70%;
+      width: 336px;
       height: 247px;
       display: grid;
       justify-content: center; }
