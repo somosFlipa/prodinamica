@@ -101,12 +101,6 @@ main button {
     text-decoration: none;
     color: #fff; }
 
-main button:hover {
-  background-color: #fff;
-  border: solid 2px #001A5A; }
-  main button:hover a {
-    color: #001A5A; }
-
 main section.first {
   display: grid;
   margin-top: -10em; }
@@ -166,11 +160,6 @@ main section.first {
     margin-right: auto;
     display: grid;
     justify-content: center; }
-  main section.first button:hover {
-    background-color: #001A5A;
-    border: none; }
-    main section.first button:hover a {
-      color: #fff; }
 
 main section.show {
   display: grid;
@@ -239,10 +228,6 @@ main section.show {
       margin-top: 50px; }
       main section.show #contenido button span {
         font-weight: 400; }
-    main section.show #contenido button:hover {
-      color: #fff;
-      background-color: #001A5A;
-      border: none; }
 
 main section.second {
   text-align: center;
@@ -696,10 +681,6 @@ footer {
         margin-top: 30px; }
         main section.show #contenido button span {
           font-weight: 400; }
-      main section.show #contenido button:hover {
-        color: #fff;
-        background-color: #001A5A;
-        border: none; }
   main section.second {
     text-align: center;
     margin-top: 10px;
