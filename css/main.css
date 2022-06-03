@@ -1,5 +1,4 @@
 header {
-  background-image: url(../assets/media/hero-bg.png);
   width: 100%;
   height: 1240px;
   background-repeat: no-repeat;
@@ -15,7 +14,8 @@ header {
     color: #fff;
     max-width: 1289px;
     margin-left: 151px;
-    padding-top: 250px; }
+    position: absolute;
+    margin-top: -650px; }
   header h2 {
     font-weight: 600;
     font-size: 48px;
@@ -24,7 +24,17 @@ header {
     color: #fff;
     margin-left: 151px;
     top: 0%;
-    width: 798px; }
+    width: 798px;
+    position: absolute;
+    margin-top: 700px; }
+  header .carousel {
+    height: 940px; }
+    header .carousel .carousel-item {
+      width: 100%;
+      height: 67em; }
+      header .carousel .carousel-item img {
+        width: 100%;
+        object-fit: contain; }
   header .first {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,7 +176,8 @@ main section.show {
   justify-content: center;
   justify-items: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow-x: hidden; }
   main section.show #contenido {
     margin-top: 100px; }
     main section.show #contenido .titulo {
@@ -216,9 +227,9 @@ main section.show {
         font-weight: 400;
         margin-top: 50px; }
     main section.show #contenido div .regular {
-      margin-top: 10vh; }
+      margin-top: 6vh; }
     main section.show #contenido div .mega {
-      margin-top: 5vh; }
+      margin-top: 3vh; }
       main section.show #contenido div .mega button {
         margin-top: 23px; }
     main section.show #contenido button {
@@ -231,7 +242,7 @@ main section.show {
 
 main section.second {
   text-align: center;
-  padding-top: 400px;
+  padding-top: 200px;
   font-family: "Montserrat", sans-serif; }
   main section.second .titulo {
     display: flex;
@@ -240,7 +251,7 @@ main section.second {
       width: 20vw;
       background-color: #000;
       height: 2px;
-      margin: 1em; }
+      margin: 2em 1em 1em 1em; }
     main section.second .titulo h2 {
       font-size: 50px;
       font-weight: 700; }
@@ -263,7 +274,10 @@ main section.third {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 34px; }
+  font-size: 34px;
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
   main section.third p {
     padding-left: 135px;
     padding-right: 135px;
@@ -273,7 +287,8 @@ main section.third {
   main section.third .fondo {
     background-color: #F4F4F4;
     border-radius: 50px;
-    height: 480px; }
+    height: 480px;
+    width: 95%; }
   main section.third hr {
     width: 240px;
     display: grid;
@@ -393,7 +408,8 @@ main section.fifth {
         margin-left: 25px; }
     main section.fifth .datos hr {
       width: 472px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      margin-left: 2.5em; }
     main section.fifth .datos ul.second {
       margin-top: 30px; }
       main section.fifth .datos ul.second li {
@@ -414,7 +430,8 @@ main section.fifth {
     main section.fifth .form .titulo {
       display: flex;
       justify-content: space-around;
-      text-align: start; }
+      text-align: start;
+      margin-top: 20px; }
       main section.fifth .form .titulo span {
         width: 20vw;
         height: 3px;
@@ -430,7 +447,8 @@ main section.fifth {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       grid-column-gap: 15px;
-      grid-row-gap: 0px; }
+      grid-row-gap: 0px;
+      margin-top: 50px; }
   main section.fifth input {
     border: none;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
@@ -452,7 +470,7 @@ footer {
   font-family: "Montserrat", sans-serif; }
   footer .contenedor {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
@@ -465,10 +483,24 @@ footer {
     margin-left: 25px;
     margin-right: 50px;
     margin-top: 15px; }
-  footer .derecha {
-    margin-top: 55px; }
-  footer .lista {
-    margin-top: 55px; }
+    footer .logo img {
+      width: 50%;
+      height: auto;
+      padding-bottom: 30px; }
+  footer div {
+    margin-top: 28px; }
+    footer div .lista {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 4em;
+      grid-row-gap: 0px;
+      margin-left: -12em; }
+  footer p {
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    margin-top: 50px;
+    color: #525252; }
 
 @media screen and (max-width: 768px) {
   nav {
@@ -526,7 +558,6 @@ footer {
           nav ul li .icons img {
             margin-left: 10vw; }
   header {
-    background-image: url(../assets/media/hero-bg.png);
     width: 100%;
     height: 524px;
     background-repeat: no-repeat;
@@ -541,14 +572,28 @@ footer {
       margin-left: 20px;
       padding-top: 0px;
       line-height: 50px;
-      font-weight: 700; }
+      font-weight: 700;
+      position: absolute;
+      margin-top: -450px;
+      z-index: 3; }
     header h2 {
       font-size: 18px;
       width: 296px;
       height: 127px;
       margin-left: 20px;
       margin-top: -150px;
-      line-height: 22px; }
+      line-height: 22px;
+      position: absolute;
+      margin-top: 320px; }
+    header .carousel {
+      height: 524px; }
+      header .carousel .carousel-item {
+        width: 100%;
+        height: 100%; }
+        header .carousel .carousel-item img {
+          width: 100%;
+          height: 40em;
+          object-fit: cover; }
     header .first {
       display: none; }
   main button {
@@ -556,7 +601,7 @@ footer {
     height: 50px;
     font-size: 20px; }
   main section.glider {
-    margin-top: -6em; }
+    margin-top: 2em; }
     main section.glider .glider-track {
       margin-left: 50px; }
     main section.glider .circulo {
@@ -829,7 +874,8 @@ footer {
         display: flex;
         justify-content: space-between;
         text-align: start;
-        padding-bottom: 50px; }
+        padding-left: 1.5em;
+        padding-right: 1.5em; }
         main section.fifth .form .titulo span {
           width: 15vw;
           height: 3px;
@@ -904,6 +950,17 @@ footer {
         main section.fifth .datos ul span {
           font-weight: 400;
           margin-left: 5px; }
+      main section.fifth .datos .end {
+        overflow-x: hidden;
+        margin-left: 1.5em;
+        margin-right: 1.5em; }
+      main section.fifth .datos hr {
+        min-width: 335px;
+        margin-left: 0;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-align: center; }
       main section.fifth .datos ul.second {
         display: inline;
         margin-left: -4em;
@@ -912,10 +969,31 @@ footer {
         padding-bottom: 30px; }
         main section.fifth .datos ul.second li {
           padding-top: 30px; }
-  footer .derecha {
-    display: none; }
-  footer .lista {
-    display: none; } }
+  footer {
+    background-color: #F4F4F4;
+    font-family: "Montserrat", sans-serif; }
+    footer .contenedor {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin-top: 0; }
+    footer a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 500;
+      font-size: 18px; }
+    footer .logo {
+      margin-left: 25px;
+      margin-right: 50px;
+      margin-top: 15px; }
+      footer .logo img {
+        width: 80%;
+        height: auto;
+        padding-bottom: 30px; }
+    footer div .lista {
+      display: none; } }
 
 @media screen and (min-width: 769px) {
   nav ul li a img {
