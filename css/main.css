@@ -531,7 +531,7 @@ footer {
       width: 70%;
       height: 20%; }
       nav .logo img {
-        max-width: 70%;
+        max-width: 60%;
         max-height: auto;
         margin-top: -10px; }
     nav ul {
@@ -624,7 +624,7 @@ footer {
       height: 132px;
       background-color: #fff;
       border-radius: 100%;
-      margin-left: 79px; }
+      margin-left: 5.3em; }
     main section.glider .texto {
       text-align: center;
       background-color: #fff;
@@ -635,7 +635,7 @@ footer {
       width: 18em;
       position: absolute;
       margin-top: -4em;
-      margin-left: auto;
+      margin-left: 0.5em;
       margin-right: auto;
       justify-content: center;
       z-index: 3; }
@@ -792,7 +792,7 @@ footer {
     main section.third .fondo {
       background-color: #F4F4F4;
       border-radius: 50px;
-      height: 620px; }
+      height: 85%; }
     main section.third hr {
       width: 240px;
       margin-top: 30px; }
@@ -820,7 +820,7 @@ footer {
       margin-top: -50px;
       width: 100%; }
   main section.fourth {
-    margin-top: 250px; }
+    margin-top: 50px; }
     main section.fourth .contenedor {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
