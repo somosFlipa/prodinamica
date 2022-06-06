@@ -113,16 +113,16 @@ main button {
 
 main section.first {
   display: grid;
-  margin-top: -10em; }
+  margin-top: -20em;
+  justify-content: center;
+  justify-items: center; }
   main section.first .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-column-gap: 3vw;
     grid-row-gap: 0px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center; }
+    position: absolute; }
   main section.first .circulo {
     width: 132px;
     height: 132px;
@@ -177,7 +177,8 @@ main section.show {
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin-top: 20em; }
   main section.show #contenido {
     margin-top: 100px; }
     main section.show #contenido .titulo {
@@ -242,7 +243,7 @@ main section.show {
 
 main section.second {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 300px;
   font-family: "Montserrat", sans-serif; }
   main section.second .titulo {
     display: flex;
@@ -662,9 +663,10 @@ footer {
     justify-content: center;
     justify-items: center;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 3em; }
     main section.show #contenido {
-      margin-top: 100px; }
+      margin-top: -150px; }
       main section.show #contenido .titulo {
         display: flex;
         justify-content: space-around;
@@ -820,7 +822,7 @@ footer {
     main section.fourth .foto img {
       width: 100%;
       height: auto;
-      border-radius: 40px; }
+      border-radius: 80px; }
     main section.fourth .texto {
       display: grid;
       justify-content: center;
@@ -937,7 +939,11 @@ footer {
         text-align: start;
         margin-left: 38px;
         font-size: 14px;
-        margin-top: 30px; }
+        margin-top: 30px;
+        margin-left: 4em;
+        display: grid;
+        justify-content: center;
+        align-items: center; }
         main section.fifth .datos ul li.phone {
           list-style-image: url(../assets/icons/phone.png);
           margin-top: 10px; }
@@ -948,18 +954,20 @@ footer {
           list-style-image: url(../assets/icons/mail.png);
           margin-top: 10px; }
         main section.fifth .datos ul p {
-          color: #001A5A;
+          color: #000;
+          margin-left: 40px;
           font-weight: 600;
-          margin-left: 5px; }
+          font-size: 14px; }
         main section.fifth .datos ul span {
           font-weight: 400;
-          margin-left: 5px; }
+          margin-left: 40px;
+          font-size: 14px; }
       main section.fifth .datos .end {
         overflow-x: hidden;
         margin-left: 1.5em;
         margin-right: 1.5em; }
       main section.fifth .datos hr {
-        min-width: 335px;
+        min-width: 100%;
         margin-left: 0;
         display: grid;
         justify-content: center;
