@@ -59,12 +59,12 @@ header {
       font-size: 18px;
       color: #929292;
       font-weight: 500;
-      margin-left: 300px;
+      padding-left: 300px;
       margin-top: 15px; }
     header .first ul {
       color: #001A5A;
       font-size: 12px;
-      margin-left: 300px;
+      margin-left: 350px;
       margin-right: -200px; }
       header .first ul p {
         margin-top: 15px; }
@@ -972,6 +972,8 @@ footer {
           font-weight: 400;
           margin-left: 40px;
           font-size: 14px; }
+      main section.fifth .datos li.phone::marker {
+        margin-top: 20em; }
       main section.fifth .datos .end {
         overflow-x: hidden;
         margin-left: 1.5em;
