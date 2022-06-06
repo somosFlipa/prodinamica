@@ -534,6 +534,8 @@ footer {
         max-width: 60%;
         max-height: auto;
         margin-top: -10px; }
+    nav .d-flex {
+      width: 100%; }
     nav ul {
       background-color: #fff;
       list-style-type: none;
@@ -545,7 +547,7 @@ footer {
       height: 100%; }
       nav ul li {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr; }
         nav ul li a.nav-link {
           color: #000;
@@ -561,7 +563,7 @@ footer {
           justify-content: end;
           justify-items: end; }
           nav ul li .arrow img {
-            margin-top: 30px; }
+            margin-top: -54px; }
         nav ul li .icons {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -972,8 +974,6 @@ footer {
           font-weight: 400;
           margin-left: 40px;
           font-size: 14px; }
-      main section.fifth .datos li.phone::marker {
-        margin-top: 20em; }
       main section.fifth .datos .end {
         overflow-x: hidden;
         margin-left: 1.5em;
