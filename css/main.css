@@ -60,7 +60,16 @@ header {
       color: #929292;
       font-weight: 500;
       padding-left: 300px;
-      margin-top: 15px; }
+      margin-top: 15px;
+    text-decoration: none;
+  color: #929292; }
+  header .first .leng a{
+    text-decoration: none;
+  }
+  header .first .leng a p{
+    
+  color: #929292;
+  }
     header .first ul {
       color: #001A5A;
       font-size: 12px;
@@ -586,8 +595,8 @@ footer {
       width: 321px;
       height: 303px;
       margin-top: 80px;
-      margin-left: 20px;
-      padding-top: 0px;
+      margin-left: 59px;
+      padding-top: 42px;
       line-height: 50px;
       font-weight: 700;
       position: absolute;
@@ -597,11 +606,11 @@ footer {
       font-size: 18px;
       width: 296px;
       height: 127px;
-      margin-left: 20px;
+      margin-left: 72px;
       margin-top: -150px;
       line-height: 22px;
       position: absolute;
-      margin-top: 320px; }
+      margin-top: 339px; }
     header .carousel {
       height: 524px; }
       header .carousel .carousel-item {
@@ -747,7 +756,7 @@ footer {
   main section.second {
     text-align: center;
     margin-top: 10px;
-    padding-top: 20%;
+    padding-top: 7%;
     display: grid;
     justify-content: center; }
     main section.second .contenedor {
@@ -818,7 +827,7 @@ footer {
       grid-row-gap: 0px;
       margin-left: auto;
       margin-right: auto;
-      max-width: 500px;
+      max-width: 300px;
       margin-top: -50px;
       width: 100%; }
   main section.fourth {
@@ -1035,4 +1044,30 @@ footer {
   main section.fifth .form .titulo .this {
     display: none; }
   main section.fifth hr.none {
-    display: none; } }
+    display: none; }
+   
+      header h1 {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 117px;
+        color: #fff;
+        max-width: 1289px;
+        margin-left: 151px;
+        position: absolute;
+        margin-top: -817px; }
+    
+        header h2 {
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 59px;
+          font-family: "Montserrat", sans-serif;
+          color: #fff;
+          margin-left: 151px;
+          top: 0%;
+          width: 798px;
+          position: absolute;
+          margin-top: 570px;
+      }
+    }
