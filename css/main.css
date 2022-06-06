@@ -83,7 +83,9 @@ nav {
     padding-left: 50px;
     margin-left: -20px; }
     nav .logo img {
-      margin-top: 5px; }
+      margin-top: 0.5em;
+      width: 80%;
+      height: auto; }
   nav ul {
     list-style-type: none;
     justify-content: flex-end;
