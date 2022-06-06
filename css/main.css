@@ -336,8 +336,9 @@ main section.fourth {
     width: 100%;
     height: auto; }
   main section.fourth .texto {
-    margin-left: 108px;
-    overflow-x: hidden; }
+    margin-left: 50px;
+    overflow-x: hidden;
+    margin-top: 1em; }
   main section.fourth h3 {
     font-size: 50px;
     font-weight: 700;
