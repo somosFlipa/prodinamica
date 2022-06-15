@@ -466,7 +466,9 @@ main section.fourth .this {
 main section.fourth button {
   margin-top: 50px;
 }
-
+#postular {
+  color: #fff;
+}
 main section.fifth {
   font-family: "Montserrat", sans-serif;
   margin-top: 225px;
@@ -640,6 +642,143 @@ footer p {
   color: #525252;
 }
 
+/* modal */
+
+.section-modal {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.none {
+  display: none !important;
+}
+
+.modal-container {
+  display: flex;
+  background: #f3f4f4;
+  border-radius: 0.625rem;
+  flex-direction: row-reverse;
+  width: max-content;
+  position: absolute;
+  z-index: 5;
+  top: 198em;
+}
+.close {
+  border-radius: 50%;
+  background-color: #001a5a;
+  color: white;
+  height: 2em;
+  width: 2em;
+  /* margin: 0.2em; */
+  border: 0;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 31.25rem;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 1.5rem;
+  margin-right: 0;
+}
+.input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: 0;
+  font: 500 0.9rem "Work Sans", sans-serif, sans-serif;
+  height: 2.15em;
+  margin-top: 2em;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  width: 80%;
+  height: 30%;
+  border-bottom: 2px solid #9da3a5;
+  align-self: center;
+}
+
+.textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #9da3a5;
+  font: 500 0.9rem "Work Sans", sans-serif, sans-serif;
+  height: 2.15em;
+  margin-top: 0.7em;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  width: 80%;
+  height: 50%;
+  align-self: center;
+}
+#archivo {
+  border: 0;
+}
+.input:focus {
+  border-bottom: 2px solid #001a5a;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #9da3a5;
+}
+
+::-moz-placeholder {
+  color: #9da3a5;
+}
+
+:-ms-input-placeholder {
+  color: #9da3a5;
+}
+
+:-moz-placeholder {
+  color: #9da3a5;
+}
+
+.button {
+  background: #001a5a;
+  border: 0;
+  border-radius: 0.5em;
+  color: #fff;
+  font: 1.1rem "Work Sans", sans-serif;
+  margin: 0.2em 2.7em 1.6em;
+  outline: none;
+  padding: 0.6em;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  width: 30%;
+}
+
+.button:hover {
+  background: #0131a9;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.foot-txt {
+  color: #9da3a5;
+  font: 500 0.85rem "Work Sans", sans-serif;
+  padding: 0.3em;
+}
+
+.foot-txt:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 600;
+}
+/* modal */
+
 @media screen and (max-width: 768px) {
   nav {
     background: #f5f5f5;
@@ -719,7 +858,7 @@ footer p {
   }
   header h1 {
     font-size: 40px;
-    width: 321px;
+    width: 90%;
     height: 303px;
     margin-top: 80px;
     margin-left: 15px;
@@ -1057,6 +1196,11 @@ footer p {
   main section.fourth button {
     margin-top: 50px;
   }
+  main .section-modal .modal-container {
+    top: 262em;
+    width: revert;
+  }
+
   main section.fifth {
     border-radius: 80px;
     background-color: #f4f4f4;
@@ -1290,4 +1434,30 @@ footer p {
     position: absolute;
     margin-top: 570px;
   }
+}
+@media screen and (max-width: 430px) {
+  header h2 {
+    margin-top: 390px;
+  }
+  main .section-modal .modal-container {
+    top: 260em;
+  }
+}
+@media (min-width: 431px) and (max-width: 548px) {
+  main .section-modal .modal-container {
+    top: 267em;
+  }
+}
+@media (min-width: 549px) and (max-width: 672px) {
+  main .section-modal .modal-container {
+    top: 270em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1397px) {
+  header h2 {
+    top: 10%;
+  }
+}
+main {
+  overflow-x: hidden;
 }
